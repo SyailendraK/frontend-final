@@ -1,0 +1,260 @@
+.detail__restaurant{
+  color:black;
+  background-color:white;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 0;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.detail__figure{
+  margin: 0px;
+  position: relative;
+}
+.detail__figure p{
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 16px;
+  position: absolute;
+  background-color: white;
+  padding:10px 10px;
+  border-radius:50% 50% 0 0;
+}
+.detail__figure img{
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  width: 100%;
+}
+.detail__title{
+  text-align: center;
+  font-size:30px;
+  margin-top:10px;
+  margin-bottom:5px;
+}
+.detail__address{
+  text-align: center;
+  margin-top:5px;
+  margin-bottom:5px;
+  font-size:14px;
+}
+
+.detail__categories{
+  text-align: center;
+}
+.detail__categorie{
+  text-align: center;
+  background-color: #FF6C19;
+  border-radius: 10px;
+  color:white;
+  max-width: fit-content;
+  padding: 4px;
+  font-size: 14px;
+  margin: 0 3px;
+  text-transform: capitalize;
+}
+.menu__title {
+  text-align: center;
+  margin-top:20px;
+  margin-bottom:5px;
+}
+.menu__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu__content h3{
+  margin-top: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.menu__content h3 i{
+  color:#fb8c00;
+}
+
+.menu__content table {
+  border-collapse: collapse;
+  background-color: white;
+  width: 90%; 
+  border: 1px solid #444;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.menu__content table td {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.menu__content table tr {
+  border-bottom: 1px solid #444;
+}
+
+.menu__content table tr.header, .menu__content table tr:hover {
+  background-color: #FF6C19;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+hr{
+  width:80%;
+  color: black;
+  margin: 0 auto;
+}
+
+.reviews ul{
+  list-style-type: none;
+}
+.review{
+  background-color:#ddd;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display:grid;
+  padding:10px;
+  margin:30px 40px 0px 40px;
+  border-radius:10px;
+}
+.review__title{
+  text-align: center;
+  margin:15px 0 10px 0;
+}
+.review__head{
+  grid-template-columns: repeat(2,1fr);
+  vertical-align: middle;
+  margin: 10px;
+  width: fit-content
+}
+.review__name{
+  font-weight: 600;
+}
+.review__head img{
+  width:80px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.review__date, .review__content{
+  display: inline-block;
+  text-transform: capitalize;
+  width: fit-content;
+  margin: 5px 10px;
+  text-align: left;
+}
+
+.add__review{
+  margin-top:30px;
+}
+
+.form__row{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 85%;
+  border-radius:10px;
+  background-color:#bbb;
+  margin:10px auto;
+  padding:10px;
+}
+.form__row input{
+  margin:5px 0;
+  border:none;
+  border-radius:4px;
+  padding:15px 5px;
+}
+.form__row textarea{
+  margin:5px 0;
+  border:none;
+  border-radius:4px;
+  padding:5px;
+
+}
+.form__row label{
+  text-align:left;
+  font-weight: 600;
+}
+.form__row button{
+  text-align:left;
+  width:fit-content;
+  background-color: #FF6C19;
+  color: white;
+  border:none;
+  border-radius:4px;
+  padding:15px 10px;
+  font-size:14px;
+  cursor: pointer;
+}
+.form__row button:hover{
+  transition: 0.3s;
+  background-color: #FF6C19;
+  opacity: 0.8;
+}
+
+.like {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #db0000;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.like i{
+  display: block;
+  color: white;
+  margin:0;
+}
+
+
+@media screen and (min-width: 992px) {
+  .detail__figure{
+    margin: 0 auto;
+    position: relative;
+  }
+  /* .detail__figure p{
+    bottom: 0px;
+  } */
+  .detail__address{
+    text-align: center;
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+  .detail__categorie{
+    font-size:12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .detail__restaurant{
+    width:100%;
+  }
+  .detail__figure p{
+    bottom: -10px;
+  }
+  .detail__description{
+    font-size:12px;
+    margin : 10px 10px;
+    text-align:justify;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .menu__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .menu__content h3{
+    margin-top: 10px;
+
+  }
+}

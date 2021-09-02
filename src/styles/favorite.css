@@ -1,0 +1,29 @@
+.content__heading{
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.content__heading i{
+  color:crimson;
+}
+
+.content__heading{
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.post-item{
+  color: #333;
+}
+
+.center{
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  grid-column: 2;
+}
+
